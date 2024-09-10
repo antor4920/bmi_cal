@@ -1,0 +1,38 @@
+h3{
+    /* background-color: blue; */
+    text-align: center;
+    color: rgb(92, 90, 90, 0.808);
+}
+
+.container{
+    text-align: center;
+    background-color: cadetblue;
+    height: 400px;
+    width: 350px;
+    border: white solid 2px;
+    border-radius: 10px;
+}
+
+.Input_Field{
+    margin-top: 25px;
+}
+
+input{
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    border: rgb(92, 90, 90, 0.808) solid 2px;
+}
+
+/* label{
+   
+    display: block;
+  font-family: sans-serif;
+    font-weight: 700;
+    margin-bottom:5px ;
+    color: rgb(92, 90, 90, 0.808);
+} */
+
+.Btn{
+    margin: 20px 5px;
+}
