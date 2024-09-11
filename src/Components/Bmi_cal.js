@@ -8,7 +8,8 @@ import './Bmi_cal.css'
      const [result,SetResult]=useState('')
        
     function ShowResult (){
-      let number=Number(weight)/(Number(height)*Number(height))
+      let feetConvert= Number(height)*0.3048;
+      let number=Number(weight)/(feetConvert*feetConvert)
        SetResult( "Your BMI is: "+ number.toFixed(1))
      }
 
@@ -23,12 +24,12 @@ import './Bmi_cal.css'
     <div className="container">
         <h3>BMI Calculator</h3>
         <div className='Input_Field'>
-        {/* <label>Age</label> */}
-        <input type='number' placeholder='Height(M)' required  onChange={(e)=> setHeight(e.target.value)}></input>
+        <label>Height</label>
+        <input type='number' placeholder='Height(feet)' required  onChange={(e)=> setHeight(e.target.value)}></input>
         </div>
 
         <div className='Input_Field'>
-        {/* <label>Height</label> */}
+        <label>Weight</label>
         <input type='number' placeholder='weight(Kg)' required onChange={(e)=> setWeight(e.target.value)}></input>
         </div>
 
